@@ -1,0 +1,14 @@
+python train.py -train /Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/training -test /Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/test -o 2
+
+python train.py -train /Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/training -test /Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/test -o 2
+python predict.py -i /Users/qingyuankeji/Downloads/dog1.jpeg  -c ./model_checkpoints/torch-model-01 -tk 1 --category_names cat_to_name.json
+python predict.py -i /Users/qingyuankeji/Downloads/dog2.jpeg  -c ./model_checkpoints/torch-model-01 -tk 1 --category_names cat_to_name.json
+python predict.py -i /Users/qingyuankeji/Downloads/cat2.jpeg  -c ./model_checkpoints/torch-model-01 -tk 1 --category_names cat_to_name.json
+python predict.py -i /Users/qingyuankeji/Downloads/cat1.jpeg  -c ./model_checkpoints/torch-model-01 -tk 1 --category_names cat_to_name.json
+
+(base) $ cat cat_to_name.json 
+{"21": "fire lily", "3": "canterbury bells", "45": "bolero deep blue", "1": "pink primrose", "34": "mexican aster", "27": "prince of wales feathers", "7": "moon orchid", "16": "globe-flower", "25": "grape hyacinth", "26": "corn poppy", "79": "toad lily", "39": "siam tulip", "24": "red ginger", "67": "spring crocus", "35": "alpine sea holly", "32": "garden phlox", "10": "globe thistle", "6": "tiger lily", "93": "ball moss", "33": "love in the mist", "9": "monkshood", "102": "blackberry lily", "14": "spear thistle", "19": "balloon flower", "100": "blanket flower", "13": "king protea", "49": "oxeye daisy", "15": "yellow iris", "61": "cautleya spicata", "31": "carnation", "64": "silverbush", "68": "bearded iris", "63": "black-eyed susan", "69": "windflower", "62": "japanese anemone", "20": "giant white arum lily", "38": "great masterwort", "4": "sweet pea", "86": "tree mallow", "101": "trumpet creeper", "42": "daffodil", "22": "pincushion flower", "2": "hard-leaved pocket orchid", "54": "sunflower", "66": "osteospermum", "70": "tree poppy", "85": "desert-rose", "99": "bromelia", "87": "magnolia", "5": "english marigold", "92": "bee balm", "28": "stemless gentian", "97": "mallow", "57": "gaura", "40": "lenten rose", "47": "marigold", "59": "orange dahlia", "48": "buttercup", "55": "pelargonium", "36": "ruby-lipped cattleya", "91": "hippeastrum", "29": "articho
+
+/Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/Cat
+
+/Users/qingyuankeji/Downloads/kagglecatsanddogs_3367a/PetImages/training/Dog
